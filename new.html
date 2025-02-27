@@ -11,12 +11,6 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="shortcut icon"
-      href="images/favicon-32x32.png"
-      type="image/x-icon"
-    />
-
     <style>
       /* Global Styles */
       * {
@@ -39,12 +33,6 @@
         align-items: center;
         padding: 20px 30px;
         background-color: hsl(0, 0%, 98%);
-      }
-
-      .nav-left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
 
       .nav-logo img {
@@ -164,7 +152,7 @@
           right: 20px;
           background: white;
           padding: 15px;
-          box-shadow: 0px 4px 6px rgba(0, 0%, 0%, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
           border-radius: 8px;
           width: 220px;
         }
@@ -209,50 +197,43 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="nav-left">
-        <div class="nav-logo">
-          <img src="images/logo.svg" alt="Logo" />
-        </div>
-        <div class="nav-menu">
-          <ul class="nav-links">
-            <li onclick="toggleSubMenu(this)">
-              Features <img src="images/icon-arrow-down.svg" />
-              <div class="sub-menu">
-                <ul>
-                  <li><img src="images/icon-todo.svg" alt="" /> Todo List</li>
-                  <li>
-                    <img src="images/icon-calendar.svg" alt="" /> Calendar
-                  </li>
-                  <li>
-                    <img src="images/icon-reminders.svg" alt="" /> Reminders
-                  </li>
-                  <li>
-                    <img src="images/icon-planning.svg" alt="" /> Planning
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li onclick="toggleSubMenu(this)">
-              Company <img src="images/icon-arrow-down.svg" />
-              <div class="sub-menu">
-                <ul>
-                  <li>History</li>
-                  <li>Our Team</li>
-                  <li>Blog</li>
-                </ul>
-              </div>
-            </li>
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
-        </div>
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="Logo" />
       </div>
-      <div class="nav-right">
-        <a href="#">Login</a>
-        <a class="outline" href="#">Register</a>
-      </div>
-
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li onclick="toggleSubMenu(this)">
+            Features <img src="images/icon-arrow-down.svg" />
+            <div class="sub-menu">
+              <ul>
+                <li><img src="images/icon-todo.svg" alt="" /> Todo List</li>
+                <li><img src="images/icon-calendar.svg" alt="" /> Calendar</li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="" /> Reminders
+                </li>
+                <li><img src="images/icon-planning.svg" alt="" /> Planning</li>
+              </ul>
+            </div>
+          </li>
+          <li onclick="toggleSubMenu(this)">
+            Company <img src="images/icon-arrow-down.svg" />
+            <div class="sub-menu">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="nav-right">
+          <a href="#">Login</a>
+          <a class="outline" href="#">Register</a>
+        </div>
+      </div>
     </div>
 
     <script>
